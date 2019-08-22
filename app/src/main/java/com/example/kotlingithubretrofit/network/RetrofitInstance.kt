@@ -1,6 +1,6 @@
 package com.example.kotlingithubretrofit.network
 
-import com.example.kotlingithubretrofit.Constants
+import com.example.kotlingithubretrofit.common.Constants
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

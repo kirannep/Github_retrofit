@@ -1,15 +1,22 @@
-package com.example.kotlingithubretrofit
+package com.example.kotlingithubretrofit.views
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.kotlingithubretrofit.R
 import com.example.kotlingithubretrofit.models.GithubRepo
 import kotlinx.android.synthetic.main.row.view.*
 
 class GithubAdapter(private val githubRepo: List<GithubRepo>) : RecyclerView.Adapter<GithubAdapter.GithubViewHoler>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GithubViewHoler {
-      return GithubViewHoler(LayoutInflater.from(parent.context).inflate(R.layout.row,parent,false))
+      return GithubViewHoler(
+          LayoutInflater.from(parent.context).inflate(
+              R.layout.row,
+              parent,
+              false
+          )
+      )
     }
 
     override fun getItemCount(): Int {

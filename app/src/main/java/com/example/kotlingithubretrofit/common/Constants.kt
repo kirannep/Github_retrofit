@@ -1,4 +1,4 @@
-package com.example.kotlingithubretrofit
+package com.example.kotlingithubretrofit.common
 
 class Constants {
     companion object{
